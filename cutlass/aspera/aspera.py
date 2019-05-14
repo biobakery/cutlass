@@ -91,7 +91,6 @@ def get_ascp_env(password):
     else:
         if password != None:
             logger.info("Setting ASPERA_SCP_PASS environment variable.")
-            logger.info(password)
             environment['ASPERA_SCP_PASS'] = password
 
     return environment
@@ -101,6 +100,7 @@ def run_ascp(ascp_cmd, password, keyfile=None):
     Run the ascp command, returning True for success or False for failure.
     """
     logger.debug("In run_ascp.")
+    logger.debug(password)
 
     if keyfile:
         if not os.path.exists(keyfile):

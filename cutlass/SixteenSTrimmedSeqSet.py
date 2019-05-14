@@ -309,7 +309,7 @@ class SixteenSTrimmedSeqSet(Base):
         """
         self.logger.debug("In 'study' setter.")
 
-        studies = ["preg_preterm", "ibd", "prediabetes", "MucosalIBD", "RISK", "Jansson_Lamendella_Crohns", "Herfarth_CCFA_Microbiome_3B_combined", "PROTECT"]
+        studies = ["preg_preterm", "ibd", "prediabetes", "risk", "protect", "mucosal_ibd", "herfarth_ccfa", "jl_crohns"]
 
         if study in studies:
             self._study = study
@@ -595,11 +595,11 @@ class SixteenSTrimmedSeqSet(Base):
                     "ibd": "ibd",
                     "preg_preterm": "ptb",
                     "prediabetes": "t2d",
-                    "RISK" : "risk",
-                    "PROTECT": "protect",
-                    "MucosalIBD": "mucosal_ibd",
-                    "Herfarth_CCFA_Microbiome_3B_combined": "herfarth_ccfa",
-                    "Jansson_Lamendella_Crohns": "jl_crohns"
+                    "risk" : "risk",
+                    "protect": "protect",
+                    "mucosal_ibd": "mucosal_ibd",
+                    "herfarth_ccfa": "herfarth_ccfa",
+                    "jl_crohns": "jl_crohns"
                 }
 
         if study not in study2dir:

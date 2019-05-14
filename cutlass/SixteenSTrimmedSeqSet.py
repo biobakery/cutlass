@@ -309,7 +309,7 @@ class SixteenSTrimmedSeqSet(Base):
         """
         self.logger.debug("In 'study' setter.")
 
-        studies = ["preg_preterm", "ibd", "prediabetes"]
+        studies = ["preg_preterm", "ibd", "prediabetes", "MucosalIBD", "RISK", "Jansson_Lamendella_Crohns", "Herfarth_CCFA_Microbiome_3B_combined", "PROTECT"]
 
         if study in studies:
             self._study = study
@@ -592,10 +592,15 @@ class SixteenSTrimmedSeqSet(Base):
         study = self._study
 
         study2dir = {
-            "ibd": "ibd",
-            "preg_preterm": "ptb",
-            "prediabetes": "t2d"
-        }
+                    "ibd": "ibd",
+                    "preg_preterm": "ptb",
+                    "prediabetes": "t2d",
+                    "RISK" : "risk",
+                    "PROTECT": "protect",
+                    "MucosalIBD": "mucosal_ibd",
+                    "Herfarth_CCFA_Microbiome_3B_combined": "herfarth_ccfa",
+                    "Jansson_Lamendella_Crohns": "jl_crohns"
+                }
 
         if study not in study2dir:
             raise ValueError("Invalid study. No directory mapping for %s" % study)

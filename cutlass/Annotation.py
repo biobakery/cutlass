@@ -31,7 +31,7 @@ class Annotation(Base):
     """
     namespace = "hmbr"
 
-    aspera_server = "aspera.ihmpdcc.org"
+    aspera_server = "aspera.microbiome-bioactives.org"
 
     date_format = '%Y-%m-%d'
 

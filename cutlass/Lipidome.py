@@ -29,7 +29,7 @@ class Lipidome(Base):
     """
     namespace = "hmbr"
 
-    aspera_server = "aspera.ihmpdcc.org"
+    aspera_server = "aspera.microbiome-bioactives.org"
 
     def __init__(self, *args, **kwargs):
         """

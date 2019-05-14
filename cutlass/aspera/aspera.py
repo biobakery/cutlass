@@ -117,6 +117,7 @@ def run_ascp(ascp_cmd, password, keyfile=None):
             universal_newlines=True,
             env=get_ascp_env(password)
         )
+        print password
 
         logger.info("Beginning transfer.")
         (s_out, s_err) = process.communicate()

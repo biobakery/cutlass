@@ -28,7 +28,7 @@ class SixteenSRawSeqSet(Base):
     Attributes:
         namespace (str): The namespace this class will use in the OSDF instance
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     aspera_server = "aspera.ihmpdcc.org"
 

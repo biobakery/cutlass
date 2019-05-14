@@ -25,7 +25,7 @@ class Subject(Base):
     Attributes:
         namespace (str): The namespace this class will use in the OSDF instance
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     valid_races = ("african_american", "american_indian_or_alaska_native",
                    "asian", "caucasian", "hispanic_or_latino", "native_hawaiian",

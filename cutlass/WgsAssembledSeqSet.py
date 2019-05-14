@@ -32,7 +32,7 @@ class WgsAssembledSeqSet(Base):
 
         date_format (str): The format of the date
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     aspera_server = "aspera.ihmpdcc.org"
 

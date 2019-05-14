@@ -26,7 +26,7 @@ class Project(Base):
     Attributes:
         namespace (str): The namespace this class will use in OSDF.
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     def __init__(self, *args, **kwargs):
         """

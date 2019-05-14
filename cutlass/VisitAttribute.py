@@ -25,7 +25,7 @@ class VisitAttribute(Base):
     Attributes:
         namespace (str): The namespace this class will use in OSDF.
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     __dict = {
         'comment': [str, None],

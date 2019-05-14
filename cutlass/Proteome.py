@@ -31,7 +31,7 @@ class Proteome(Base):
 
         aspera_server (str): The hostname of the DCC Aspera server
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     date_format = '%Y-%m-%d'
 

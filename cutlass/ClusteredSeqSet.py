@@ -27,7 +27,7 @@ class ClusteredSeqSet(Base):
 
         namespace (str): The namespace this class will use in OSDF.
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     aspera_server = "aspera.ihmpdcc.org"
 

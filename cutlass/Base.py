@@ -20,7 +20,7 @@ class Base(object):
     Attributes:
         namespace (str): The namespace this class will use in the OSDF instance
     """
-    namespace = "ihmp"
+    namespace = "hmbr"
 
     def __init__(self):
         """

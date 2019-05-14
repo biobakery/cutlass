@@ -100,7 +100,6 @@ def run_ascp(ascp_cmd, password, keyfile=None):
     Run the ascp command, returning True for success or False for failure.
     """
     logger.debug("In run_ascp.")
-    logger.debug(password)
 
     if keyfile:
         if not os.path.exists(keyfile):
@@ -131,7 +130,7 @@ def run_ascp(ascp_cmd, password, keyfile=None):
             success = True
         else:
             if re.match(r"^.*failed to authenticate", s_err):
-                logger.error(s_err)
+                logger.error("Aspera authentication failure.")
             else:
                 if s_err != None:
                     logger.error("Unexpected STDERR from ascp: %s", s_err)
